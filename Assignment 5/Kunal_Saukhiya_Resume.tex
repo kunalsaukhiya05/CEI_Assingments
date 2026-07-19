@@ -1,0 +1,167 @@
+%-------------------------
+% ATS-Friendly One-Page Resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.60in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule\vspace{-4pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{#1\vspace{0pt}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=1pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Kunal Saukhiya} \\ \vspace{2pt}
+    Jaipur, Rajasthan, India \\ \vspace{2pt}
+    \small +91 7878820517 ~$|$~
+    \href{mailto:hgkunal@gmail.com}{hgkunal@gmail.com} ~$|$~
+    \href{https://linkedin.com/in/kunalsaukhiya05}{linkedin.com/in/kunalsaukhiya05} ~$|$~
+    \href{https://github.com/kunalsaukhiya05}{github.com/kunalsaukhiya05}
+    \vspace{-4pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Swami Keshvanand Institute of Technology (SKIT)}{Sep. 2023 -- Present}
+      {Bachelor of Technology in Computer Science (CGPA: 8.8)}{Jaipur, Rajasthan}
+    \resumeSubheading
+      {Holy Angels English Sr. Sec School}{July 2021 -- May 2022}
+      {Senior Secondary (12th)}{Mahwa, Rajasthan}
+  \resumeSubHeadingListEnd
+  \vspace{-2pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, C, SQL,} \\[2pt]
+     \textbf{ML \& Data Libraries}{: Numpy, Pandas, Scikit-Learn, XGBoost, Random Forest} \\[2pt]
+     \textbf{Computer Vision}{: OpenCV, MediaPipe} \\[2pt]
+     \textbf{Visualization}{: Matplotlib, Seaborn} \\[2pt]
+     \textbf{Database}{: MySQL, Data Pipelines} \\[2pt]
+     \textbf{Tools \& Frameworks}{: Git, GitHub, Streamlit, Jupyter Notebook, VS Code}
+    }}
+ \end{itemize}
+ \vspace{-4pt}
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-4pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Salary Prediction Dashboard} $|$ \emph{Python, Pandas, Streamlit, Scikit-Learn, XGBoost}}
+        {\href{https://github.com/kunalsaukhiya05/salary-prediction-dashboard}{GitHub}}
+        \resumeItemListStart
+          \resumeItem{Built regression-based ML models using 20+ employee features for accurate salary prediction.}
+          \resumeItem{Implemented data preprocessing pipeline and feature engineering to boost model accuracy.}
+          \resumeItem{Created interactive Streamlit dashboard for real-time predictions and visual analytics.}
+        \resumeItemListEnd
+      \vspace{-2pt}
+      \resumeProjectHeading
+        {\textbf{Air Draw -- Hand Gesture Drawing App} $|$ \emph{Python, OpenCV, MediaPipe, NumPy}}
+        {\href{https://github.com/kunalsaukhiya05/air-draw-opencv}{GitHub}}
+        \resumeItemListStart
+          \resumeItem{Built a real-time computer vision app that tracks hand landmarks via MediaPipe to enable touchless drawing on screen using index finger movement.}
+          \resumeItem{Implemented live video frame processing with OpenCV for finger-tip detection and stroke rendering at real-time frame rates.}
+          \resumeItem{Designed canvas overlay logic with keypress-based controls for clearing and exiting the drawing session.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-2pt}
+
+    %-----------EXPERIENCE-----------
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Celebal Technologies}{May 2026 -- Present}
+      {Data Science Intern}{Jaipur, Rajasthan}
+      \resumeItemListStart
+        \resumeItem{Working on real-world Data Science projects involving data preprocessing, feature engineering, and model building.}
+        \resumeItem{Gaining hands-on experience with industry-relevant tools and datasets under mentorship of experienced professionals.}
+        \resumeItem{Participating in guided learning sessions focused on building strong technical foundations in Data Science.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Cynbit Technologies}{June 2025 -- August 2025}
+      {Machine Learning Intern}{Jaipur, Rajasthan}
+      \resumeItemListStart
+        \resumeItem{Developed a salary prediction system using regression-based ML models on employee datasets with 20+ features.}
+        \resumeItem{Performed data preprocessing and feature engineering to improve model performance and accuracy.}
+        \resumeItem{Evaluated models using MAE and R\textsuperscript{2} metrics, achieving R\textsuperscript{2} score of 0.87.}
+        \resumeItem{Built a web-based interface for real-time salary prediction and result visualization using Streamlit.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{-2pt}
+
+%-----------EXTRACURRICULAR-----------
+\section{Extracurricular}
+    \resumeSubHeadingListStart
+      \resumeItemListStart
+        \resumeItem{Solved 300+ coding problems on LeetCode and other Coding Platforms; strong foundation in DSA and algorithms.}
+        \resumeItem{Ranked in top 30\% nationwide in Flipkart Grid Challenge on Unstop platform.}
+        \resumeItem{Zonal Round Coordinator for Eureka Startup Competition at SKIT Jaipur -- managed 100+ participants and multiple startup pitches.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
