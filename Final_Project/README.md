@@ -1,5 +1,7 @@
 # Satellite Image Land-Use Classifier & Temporal Change Detector
 
+Live Link: https://m34ocw336kpyug75rkmx4o.streamlit.app/
+
 This repository contains a complete computer vision pipeline to classify land-use types from satellite imagery and detect temporal changes using embeddings.
 
 ## Datasets
